@@ -26,21 +26,5 @@ as well as an improved FW for Hantek 6022 USB Oscilloscopes''',
                                os.path.join('Firmware', 'stock', 'stock_fw.ihex'),]
     },
     include_package_data=True,
-    install_requires=['libusb1', 'matplotlib'],
-    data_files=[
-        ("/usr/bin/", ["examples/calibrate_6022.py",
-                       "examples/capture_6022.py",
-                       "examples/plot_from_capture_6022.py",
-                       "examples/fft_from_capture_6022.py",
-                       "examples/fft_ft_from_capture_6022.py",
-                       "examples/set_cal_out_freq_6022.py",
-                       "examples/upload_6022_firmware_from_hex.py",
-                       "examples/upload_6022_firmware.py",
-                       "fx2upload/fx2upload"]
-        ),
-        ("/usr/share/doc/hantek6022api/", ["README.md"]),
-        ("/usr/share/doc/hantek6022api/", ["CHANGELOG"]),
-        ("/usr/share/doc/hantek6022api/", ["LICENSE"]),
-        ("/etc/udev/rules.d/", ["udev/60-hantek6022api.rules"]),
-    ]
+    install_requires=['libusb1']
 )
